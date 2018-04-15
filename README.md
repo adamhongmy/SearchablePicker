@@ -1,6 +1,6 @@
 
 # SearchablePicker
-###### A simple picker view with search bar.
+###### A simple picker view with a search bar.
 * Native-like behavior. 
 * Two ways of presenting:
   * Titles only.
