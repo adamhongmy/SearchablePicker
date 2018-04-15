@@ -10,7 +10,7 @@
 * Objective-c
 
 ## Demo gifs ##
-![Animation](demo-screens/demo-iphone.gif)![Animation](demo-screens/demo-ipad.gif)
+![Animation](demo-screens/demo-iphone.gif)    ![Animation](demo-screens/demo-ipad.gif)
 
 
 ### Basic Usage ##
