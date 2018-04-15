@@ -39,3 +39,11 @@ Download the project and add [SearchablePicker](SearchablePicker/SearchablePicke
 
 ## Motivation ##
 Coming soon!
+
+## Todo ##
+- [ ] Insert motivation
+- [ ] Add customizable bar color
+- [ ] Implement alphabets indexing at the scroll bar
+- [ ] Enable Cocoapod and Carthage support
+
+
