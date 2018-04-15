@@ -6,4 +6,4 @@
 Coming soon!
 
 # Demo gifs
-![Animation](./demo-iphone.gif)
+![Animation](demo-screens/demo-iphone.gif)
