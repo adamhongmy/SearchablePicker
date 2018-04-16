@@ -1,4 +1,5 @@
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/fastlane/produce/blob/master/LICENSE)
 # SearchablePicker
 ###### A simple picker view with a search bar.
 * Native-like behavior. 
