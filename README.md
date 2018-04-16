@@ -2,7 +2,7 @@
 # SearchablePicker
 ###### A simple picker view with a search bar.
 * Native-like behavior. 
-* Two ways of presenting:
+* Two options to present:
   * Titles only.
   * Titles with descriptions.
 * Available for iPhone and iPad.
