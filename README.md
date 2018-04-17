@@ -2,6 +2,7 @@
 ![Language](https://img.shields.io/badge/language-objective--c-blue.svg) [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/fastlane/produce/blob/master/LICENSE)
 # SearchablePicker
 ###### A simple picker view with a search bar.
+![Animation](demo-screens/demo-iphone.gif)    ![Animation](demo-screens/demo-ipad.gif)
 * Native-like behavior. 
 * Two options to present:
   * Titles only.
@@ -9,9 +10,6 @@
 * Available for iPhone and iPad.
 * Support for iOS 9 and above.
 * Objective-c
-
-## Demo gifs ##
-![Animation](demo-screens/demo-iphone.gif)    ![Animation](demo-screens/demo-ipad.gif)
 
 
 ### Basic Usage ##
