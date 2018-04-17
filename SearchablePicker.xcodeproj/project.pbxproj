@@ -89,28 +89,12 @@
 				76B85154208348E600E97600 /* SearchStringPickerViewController.h */,
 				76B85152208348E600E97600 /* SearchStringPickerViewController.m */,
 				76B85153208348E600E97600 /* SearchStringPickerViewController.xib */,
-				76B8515B20834AA800E97600 /* UIImage-Utilities */,
-				76B8515720834A8E00E97600 /* NSString-Utilities */,
-			);
-			path = SearchablePicker;
-			sourceTree = "<group>";
-		};
-		76B8515720834A8E00E97600 /* NSString-Utilities */ = {
-			isa = PBXGroup;
-			children = (
+				76B8515C20834AA800E97600 /* UIImage+Utilities.h */,
+				76B8515D20834AA800E97600 /* UIImage+Utilities.m */,
 				76B8515920834A8E00E97600 /* NSString+Utilities.h */,
 				76B8515820834A8E00E97600 /* NSString+Utilities.m */,
 			);
-			path = "NSString-Utilities";
-			sourceTree = "<group>";
-		};
-		76B8515B20834AA800E97600 /* UIImage-Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				76B8515C20834AA800E97600 /* UIImage+Utilities.h */,
-				76B8515D20834AA800E97600 /* UIImage+Utilities.m */,
-			);
-			path = "UIImage-Utilities";
+			path = SearchablePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
