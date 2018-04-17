@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SearchablePicker'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'iOS picker view controller'
   s.homepage         = 'https://github.com/adamhongmy/SearchablePicker'
   s.license          = { :type => 'MIT' }
@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.source_files = 'SearchablePicker/SearchablePicker/*.{h,m}'
-   s.resource_bundles = {
-    'SearchablePicker' => ['SearchablePicker/SearchablePicker/*.xib']
-   }
+  s.resources =  ["SearchablePicker/SearchablePicker/*.{xib}"]
+
 end
