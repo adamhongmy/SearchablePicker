@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'iOS picker view controller'
   s.homepage         = 'https://github.com/adamhongmy/SearchablePicker'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { '<adamhongmy>' => '<adamhongmy@gmail.con>' }
   s.source           = { :git => 'https://github.com/adamhongmy/SearchablePicker.git', :tag => s.version.to_s }
 
