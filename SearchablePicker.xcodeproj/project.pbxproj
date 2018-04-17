@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76921264208607BD00D7B866 /* SearchStringPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B85153208348E600E97600 /* SearchStringPickerViewController.xib */; };
 		76B8513D2083482B00E97600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8513C2083482B00E97600 /* AppDelegate.m */; };
 		76B851402083482B00E97600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8513F2083482B00E97600 /* ViewController.m */; };
 		76B851432083482B00E97600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B851412083482B00E97600 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		76B851482083482E00E97600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B851462083482E00E97600 /* LaunchScreen.storyboard */; };
 		76B8514B2083482E00E97600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8514A2083482E00E97600 /* main.m */; };
 		76B85155208348E600E97600 /* SearchStringPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B85152208348E600E97600 /* SearchStringPickerViewController.m */; };
-		76B85156208348E600E97600 /* SearchStringPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B85153208348E600E97600 /* SearchStringPickerViewController.xib */; };
 		76B8515A20834A8E00E97600 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8515820834A8E00E97600 /* NSString+Utilities.m */; };
 		76B8515E20834AA800E97600 /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8515D20834AA800E97600 /* UIImage+Utilities.m */; };
 /* End PBXBuildFile section */
@@ -154,10 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76921264208607BD00D7B866 /* SearchStringPickerViewController.xib in Resources */,
 				76B851482083482E00E97600 /* LaunchScreen.storyboard in Resources */,
 				76B851452083482E00E97600 /* Assets.xcassets in Resources */,
 				76B851432083482B00E97600 /* Main.storyboard in Resources */,
-				76B85156208348E600E97600 /* SearchStringPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
