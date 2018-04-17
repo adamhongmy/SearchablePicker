@@ -8,6 +8,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/adamhongmy/SearchablePicker.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'SearchablePicker/SearchablePicker/*'
-
+  s.source_files = 'SearchablePicker/SearchablePicker/*.{h,m}'
+   s.resource_bundles = {
+    'SearchablePicker' => ['SearchablePicker/SearchablePicker/*.xib']
+   }
 end
