@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SearchablePicker'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'iOS picker view controller'
   s.homepage         = 'https://github.com/adamhongmy/SearchablePicker'
   s.license          = { :type => 'MIT' }
