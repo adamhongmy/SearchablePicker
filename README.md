@@ -30,7 +30,11 @@ NSArray *countries = [NSArray arrayWithObjects:@"Afghanistan", @"Georgia", @"Hai
                                 presentFromViewController:self];                                
 ```
 ## Installation ##
-###### Cocoapod and Carthage coming soon!
+### Cocoapod
+`pod 'SearchablePicker'`
+
+### Carthage
+######  coming soon!
 
 ### Manually
 Download the project and add [SearchablePicker](SearchablePicker/SearchablePicker) folder to your project.
@@ -42,6 +46,7 @@ Coming soon!
 - [ ] Insert motivation
 - [ ] Add customizable bar color
 - [ ] Implement alphabets indexing at the scroll bar
-- [ ] Enable Cocoapod and Carthage support
+- [x] Cocoapod support
+- [ ] Carthage support
 
 
