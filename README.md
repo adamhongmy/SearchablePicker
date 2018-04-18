@@ -37,13 +37,13 @@ NSArray *aryCountries = [NSArray arrayWithObjects:@"Afghanistan", @"Georgia", @"
 ```obj-c
 NSDictionary *dicCountries = @{@"Afghanistan" : @"Islamic Republic of Afghanistan", @"Georgia" : @"", @"Haiti" : @"Republic of Haiti", @"India" : @"Republic of India"};
 
- [SearchStringPickerViewController showPickerWithTitle:sender.currentTitle
-                                          rowsWithDetails:self.dicTitlesAndDescs
+ [SearchStringPickerViewController showPickerWithTitle:@"Countries"
+                                          rowsWithDetails:dicCountries
                                          initialSelection:self.lblPickerWithTitleAndDesc.text
                                  pickerTableViewCellStyle:UITableViewCellStyleSubtitle
                                                sourceView:sender
                                                 doneBlock:^(NSString *selectedTitle, NSString *selectedDetail) {
-                                                    [self.lblPickerWithTitleAndDesc setText:selectedTitle];
+                                                    NSLog(@"Title: %@, Detail: %@", selectedTitle, selectedDetail);
                                                 }
                                               cancelBlock:nil
                                 presentFromViewController:self];
