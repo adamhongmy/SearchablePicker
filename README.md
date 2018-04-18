@@ -13,8 +13,6 @@
 
 
 ### Basic Usage ##
-**For detailed examples, please download and try out this repo.**
-
 **Title only**
 
 *Objective-c*
@@ -37,7 +35,7 @@ NSArray *aryCountries = [NSArray arrayWithObjects:@"Afghanistan", @"Georgia", @"
 ```obj-c
 NSDictionary *dicCountries = @{@"Afghanistan" : @"Islamic Republic of Afghanistan", @"Georgia" : @"", @"Haiti" : @"Republic of Haiti", @"India" : @"Republic of India"};
 
- [SearchStringPickerViewController showPickerWithTitle:@"Countries"
+[SearchStringPickerViewController showPickerWithTitle:@"Countries"
                                           rowsWithDetails:dicCountries
                                          initialSelection:self.lblPickerWithTitleAndDesc.text
                                  pickerTableViewCellStyle:UITableViewCellStyleSubtitle
@@ -48,6 +46,8 @@ NSDictionary *dicCountries = @{@"Afghanistan" : @"Islamic Republic of Afghanista
                                               cancelBlock:nil
                                 presentFromViewController:self];
 ```
+**For detailed examples, please download and try out this repo.**
+
 ## Installation ##
 ### Cocoapod
 `pod 'SearchablePicker'`
