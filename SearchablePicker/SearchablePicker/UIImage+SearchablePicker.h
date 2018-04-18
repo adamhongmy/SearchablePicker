@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Utilities)
+@interface UIImage (SearchablePicker)
 - (UIImage *)imageWithImage:(UIImage*)originalImage scaledToSize:(CGSize)newSize;
 + (UIImage *)imageFromColor:(UIColor *)color;
 @end

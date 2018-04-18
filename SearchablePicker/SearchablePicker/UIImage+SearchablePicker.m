@@ -6,9 +6,9 @@
 //  Copyright © 2017 FCS Computer System. All rights reserved.
 //
 
-#import "UIImage+Utilities.h"
+#import "UIImage+SearchablePicker.h"
 
-@implementation UIImage (Utilities)
+@implementation UIImage (SearchablePicker)
 //Ancillary method to scale an image based on a CGSize
 - (UIImage *)imageWithImage:(UIImage*)originalImage scaledToSize:(CGSize)newSize;
 {

@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Utilities)
+@interface
+NSString (SearchablePicker)
 - (BOOL)isBlank;
 - (BOOL)isNumeric;
 - (NSString *)stringByStrippingWhitespace;

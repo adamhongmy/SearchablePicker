@@ -7,7 +7,7 @@
 //
 
 #import "SearchStringPickerViewController.h"
-#import "NSString+Utilities.h"
+#import "NSString+SearchablePicker.h"
 
 #define UIColorFromHEX(hexValue) [self colorFromHexString:hexValue alpha:1]
 #define CELL_PICKER_ID @"CELL_PICKER_ID"

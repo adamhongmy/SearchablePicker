@@ -6,9 +6,9 @@
 //  Copyright © 2017 FCS Computer System. All rights reserved.
 //
 
-#import "NSString+Utilities.h"
+#import "NSString+SearchablePicker.h"
 
-@implementation NSString (Utilities)
+@implementation NSString (SearchablePicker)
 
 -(BOOL)isBlank {
     return [[self stringByStrippingWhitespace] isEqualToString:@""];

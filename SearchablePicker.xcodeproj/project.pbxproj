@@ -15,11 +15,12 @@
 		76B851482083482E00E97600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B851462083482E00E97600 /* LaunchScreen.storyboard */; };
 		76B8514B2083482E00E97600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8514A2083482E00E97600 /* main.m */; };
 		76B85155208348E600E97600 /* SearchStringPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B85152208348E600E97600 /* SearchStringPickerViewController.m */; };
-		76B8515A20834A8E00E97600 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8515820834A8E00E97600 /* NSString+Utilities.m */; };
-		76B8515E20834AA800E97600 /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8515D20834AA800E97600 /* UIImage+Utilities.m */; };
+		76B8515A20834A8E00E97600 /* NSString+SearchablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8515820834A8E00E97600 /* NSString+SearchablePicker.m */; };
+		76B8515E20834AA800E97600 /* UIImage+SearchablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B8515D20834AA800E97600 /* UIImage+SearchablePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		768F87922087587200D54F64 /* SearchablePicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SearchablePicker-Bridging-Header.h"; sourceTree = "<group>"; };
 		76B851382083482B00E97600 /* SearchablePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchablePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B8513B2083482B00E97600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76B8513C2083482B00E97600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,10 +34,10 @@
 		76B85152208348E600E97600 /* SearchStringPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchStringPickerViewController.m; sourceTree = "<group>"; };
 		76B85153208348E600E97600 /* SearchStringPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchStringPickerViewController.xib; sourceTree = "<group>"; };
 		76B85154208348E600E97600 /* SearchStringPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchStringPickerViewController.h; sourceTree = "<group>"; };
-		76B8515820834A8E00E97600 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
-		76B8515920834A8E00E97600 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
-		76B8515C20834AA800E97600 /* UIImage+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utilities.h"; sourceTree = "<group>"; };
-		76B8515D20834AA800E97600 /* UIImage+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utilities.m"; sourceTree = "<group>"; };
+		76B8515820834A8E00E97600 /* NSString+SearchablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SearchablePicker.m"; sourceTree = "<group>"; };
+		76B8515920834A8E00E97600 /* NSString+SearchablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SearchablePicker.h"; sourceTree = "<group>"; };
+		76B8515C20834AA800E97600 /* UIImage+SearchablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SearchablePicker.h"; sourceTree = "<group>"; };
+		76B8515D20834AA800E97600 /* UIImage+SearchablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SearchablePicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +90,11 @@
 				76B85154208348E600E97600 /* SearchStringPickerViewController.h */,
 				76B85152208348E600E97600 /* SearchStringPickerViewController.m */,
 				76B85153208348E600E97600 /* SearchStringPickerViewController.xib */,
-				76B8515C20834AA800E97600 /* UIImage+Utilities.h */,
-				76B8515D20834AA800E97600 /* UIImage+Utilities.m */,
-				76B8515920834A8E00E97600 /* NSString+Utilities.h */,
-				76B8515820834A8E00E97600 /* NSString+Utilities.m */,
+				76B8515C20834AA800E97600 /* UIImage+SearchablePicker.h */,
+				76B8515D20834AA800E97600 /* UIImage+SearchablePicker.m */,
+				76B8515920834A8E00E97600 /* NSString+SearchablePicker.h */,
+				76B8515820834A8E00E97600 /* NSString+SearchablePicker.m */,
+				768F87922087587200D54F64 /* SearchablePicker-Bridging-Header.h */,
 			);
 			path = SearchablePicker;
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 				TargetAttributes = {
 					76B851372083482B00E97600 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -169,10 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B851402083482B00E97600 /* ViewController.m in Sources */,
-				76B8515A20834A8E00E97600 /* NSString+Utilities.m in Sources */,
+				76B8515A20834A8E00E97600 /* NSString+SearchablePicker.m in Sources */,
 				76B8514B2083482E00E97600 /* main.m in Sources */,
 				76B8513D2083482B00E97600 /* AppDelegate.m in Sources */,
-				76B8515E20834AA800E97600 /* UIImage+Utilities.m in Sources */,
+				76B8515E20834AA800E97600 /* UIImage+SearchablePicker.m in Sources */,
 				76B85155208348E600E97600 /* SearchStringPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5XB49HEEF;
 				INFOPLIST_FILE = SearchablePicker/Info.plist;
@@ -322,6 +326,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamhongmy.SearchablePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SearchablePicker/SearchablePicker/SearchablePicker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -330,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5XB49HEEF;
 				INFOPLIST_FILE = SearchablePicker/Info.plist;
@@ -339,6 +347,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamhongmy.SearchablePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SearchablePicker/SearchablePicker/SearchablePicker-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
