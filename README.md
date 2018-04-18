@@ -13,12 +13,14 @@
 
 
 ### Basic Usage ##
-**For detailed examples, please download and try out this repo.**
+**Title only**
+
+*Objective-c*
 ```obj-c
-NSArray *countries = [NSArray arrayWithObjects:@"Afghanistan", @"Georgia", @"Haiti", @"India", nil];
+NSArray *aryCountries = [NSArray arrayWithObjects:@"Afghanistan", @"Georgia", @"Haiti", @"India", nil];
 
 [SearchStringPickerViewController showPickerWithTitle:@"Countries"
-                                                     rows:countries
+                                                     rows:aryCountries
                                          initialSelection:[colors indexOfObject:@"India"]
                                                sourceView:sender
                                                 doneBlock:^(NSInteger selectedIndex, NSString *selectedValue) {
@@ -27,6 +29,25 @@ NSArray *countries = [NSArray arrayWithObjects:@"Afghanistan", @"Georgia", @"Hai
                                               cancelBlock:nil 
                                 presentFromViewController:self];                                
 ```
+**Title with description**
+
+*Objective-c*
+```obj-c
+NSDictionary *dicCountries = @{@"Afghanistan" : @"Islamic Republic of Afghanistan", @"Georgia" : @"", @"Haiti" : @"Republic of Haiti", @"India" : @"Republic of India"};
+
+[SearchStringPickerViewController showPickerWithTitle:@"Countries"
+                                          rowsWithDetails:dicCountries
+                                         initialSelection:self.lblPickerWithTitleAndDesc.text
+                                 pickerTableViewCellStyle:UITableViewCellStyleSubtitle
+                                               sourceView:sender
+                                                doneBlock:^(NSString *selectedTitle, NSString *selectedDetail) {
+                                                    NSLog(@"Title: %@, Detail: %@", selectedTitle, selectedDetail);
+                                                }
+                                              cancelBlock:nil
+                                presentFromViewController:self];
+```
+**For detailed examples, please download and try out this repo.**
+
 ## Installation ##
 ### Cocoapod
 `pod 'SearchablePicker'`
