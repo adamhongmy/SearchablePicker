@@ -1,7 +1,7 @@
 
 ![Language](https://img.shields.io/badge/language-objective--c-blue.svg) [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/fastlane/produce/blob/master/LICENSE)
 # SearchablePicker
-###### A simple picker view with a search bar.
+###### Display Apple system-like picker view. It is well suited for showing a long list of items with a search bar in iOS-like way. It looks very similar to the views shown in Apple System Setting.
 ![Animation](demo-screens/demo-iphone.gif)    ![Animation](demo-screens/demo-ipad.gif)
 * Native-like behavior. 
 * Two options to present:
@@ -10,7 +10,6 @@
 * Available for iPhone and iPad.
 * Support for iOS 9 and above.
 * Objective-c
-
 
 ### Basic Usage ##
 **Title only**
