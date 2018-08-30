@@ -10,6 +10,8 @@
 * Available for iPhone and iPad.
 * Support for iOS 9 and above.
 * Objective-c 
+* Xcode 9 and above 
+  * (due to safe area in autolayout)
 
 ### Basic Usage ##
 **Title only**
