@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,11 +47,27 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C4Y-4h-0Mv">
+                                <rect key="frame" x="163" y="219" width="51" height="31"/>
+                                <connections>
+                                    <action selector="multilineSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mpF-SX-HZ7"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiline?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvs-Ub-IfE">
+                                <rect key="frame" x="151.5" y="190.5" width="72.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u3X-YN-zTI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9ey-kh-6I5"/>
+                            <constraint firstItem="Cvs-Ub-IfE" firstAttribute="centerX" secondItem="C4Y-4h-0Mv" secondAttribute="centerX" id="bnu-dC-k8C"/>
                             <constraint firstItem="u3X-YN-zTI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cHM-Fr-i8j"/>
+                            <constraint firstItem="C4Y-4h-0Mv" firstAttribute="top" secondItem="Cvs-Ub-IfE" secondAttribute="bottom" constant="8" id="cNj-5K-5O7"/>
+                            <constraint firstItem="C4Y-4h-0Mv" firstAttribute="centerX" secondItem="66i-Tc-ju7" secondAttribute="centerX" id="l2y-h6-VFS"/>
+                            <constraint firstItem="66i-Tc-ju7" firstAttribute="top" secondItem="C4Y-4h-0Mv" secondAttribute="bottom" constant="33" id="mpZ-Zr-4T8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -66,6 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130" y="133"/>
         </scene>
     </scenes>
 </document>

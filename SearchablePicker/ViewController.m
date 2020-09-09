@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSArray *aryTitles;
 @property (nonatomic, strong) NSArray *aryDescs;
 @property (nonatomic, strong) NSDictionary *dicTitlesAndDescs;
+@property (assign) BOOL isMultiline;
 @end
 
 @implementation ViewController
@@ -30,7 +31,7 @@
 
 
 -(NSArray *)aryTitles{
-    return @[@"Afghanistan", @"Albania", @"Algeria", @"Bahrain", @"Bangladesh", @"Belarus", @"Belgium", @"Cape Verde", @"Central African Republic", @"Chad ", @"Chile", @"China", @"Colombia", @"Denmark", @"Djibouti", @"Dominica", @"Dominican Republic", @"East Timor", @"Ecuador", @"Egypt", @"El Salvador", @"Fiji", @"Finland", @"France", @"Gabon", @"Georgia", @"Germany", @"Ghana", @"Greece", @"Haiti", @"Honduras", @"India", @"Indonesia", @"Iran", @"Japan", @"Malaysia", @"Maldives", @"Mali", @"Malta"];
+    return @[@"Afghanistan\nSecond line title and\nThird line and so on.", @"Albania", @"Algeria", @"Bahrain", @"Bangladesh", @"Belarus", @"Belgium", @"Cape Verde", @"Central African Republic", @"Chad ", @"Chile", @"China", @"Colombia", @"Denmark", @"Djibouti", @"Dominica", @"Dominican Republic", @"East Timor", @"Ecuador", @"Egypt", @"El Salvador", @"Fiji", @"Finland", @"France", @"Gabon", @"Georgia", @"Germany", @"Ghana", @"Greece", @"Haiti", @"Honduras", @"India", @"Indonesia", @"Iran", @"Japan", @"Malaysia", @"Maldives", @"Mali", @"Malta"];
 }
 
 -(NSArray *)aryDescs{
@@ -45,10 +46,15 @@
     return dic;
 }
 
+- (IBAction)multilineSwitchChanged:(UISwitch *)sender {
+  self.isMultiline = sender.isOn;
+}
+
 - (IBAction)onBtnPickerWithTitlePressed:(UIButton *)sender {
     [SearchStringPickerViewController showPickerWithTitle:sender.currentTitle
                                                      rows:self.aryTitles
                                          initialSelection:[self.aryTitles indexOfObject:self.lblPickerWithTitle.text]
+                                              isMultiline:self.isMultiline
                                                sourceView:sender
                                                 doneBlock:^(NSInteger selectedIndex, NSString *selectedValue) {
                                                     [self.lblPickerWithTitle setText:selectedValue];
@@ -61,6 +67,7 @@
     [SearchStringPickerViewController showPickerWithTitle:sender.currentTitle
                                           rowsWithDetails:self.dicTitlesAndDescs
                                          initialSelection:self.lblPickerWithTitleAndDesc.text
+                                              isMultiline:self.isMultiline
                                  pickerTableViewCellStyle:UITableViewCellStyleSubtitle
                                                sourceView:sender
                                                 doneBlock:^(NSString *selectedTitle, NSString *selectedDetail) {
