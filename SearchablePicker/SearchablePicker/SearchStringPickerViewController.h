@@ -13,6 +13,7 @@
 +(void)showPickerWithTitle:(NSString *)title
                       rows:(NSArray <NSString *> *)rows
           initialSelection:(NSInteger)initialSelection
+               isMultiline:(BOOL)isMultiline
                 sourceView:(UIView *)sourceView
                  doneBlock:(void (^)(NSInteger selectedIndex, NSString * selectedValue))doneBlock
                cancelBlock:(void (^)(void))cancelBlock
@@ -21,6 +22,7 @@
 +(void)showPickerWithTitle:(NSString *)title
            rowsWithDetails:(NSDictionary<NSString *, NSString *> *)rowsWithDetails
           initialSelection:(NSString *)initialSelection
+               isMultiline:(BOOL)isMultiline
   pickerTableViewCellStyle:(UITableViewCellStyle)pickerTableViewCellStyle
                 sourceView:(UIView *)sourceView
                  doneBlock:(void (^)(NSString *selectedTitle, NSString *selectedDetail))doneBlock
@@ -31,6 +33,7 @@
 -(instancetype)initPickerWithTitle:(NSString *)title
                               rows:(NSArray <NSString *> *)rows
                   initialSelection:(NSInteger)initialSelection
+                       isMultiline:(BOOL)isMultiline
                         sourceView:(UIView *)sourceView
                          doneBlock:(void (^)(NSInteger selectedIndex, NSString * selectedValue))doneBlock
                        cancelBlock:(void (^)(void))cancelBlock;
@@ -38,6 +41,7 @@
 -(instancetype)initPickerWithTitle:(NSString *)title
                    rowsWithDetails:(NSDictionary<NSString *, NSString *> *)rowsWithDetails
                   initialSelection:(NSString *)initialSelection
+                       isMultiline:(BOOL)isMultiline
           pickerTableViewCellStyle:(UITableViewCellStyle)pickerTableViewCellStyle
                         sourceView:(UIView *)sourceView
                          doneBlock:(void (^)(NSString *selectedTitle, NSString *selectedDetail))doneBlock

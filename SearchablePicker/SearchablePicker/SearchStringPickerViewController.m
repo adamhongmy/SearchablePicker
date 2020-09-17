@@ -45,6 +45,8 @@ typedef void(^cancelBlock)(void);
 @property (nonatomic, assign) UITableViewCellStyle pickerTableViewCellStyle;
 
 @property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
+
+@property (nonatomic, assign) BOOL isMultiline;
 @end
 
 @implementation SearchStringPickerViewController
@@ -52,6 +54,7 @@ typedef void(^cancelBlock)(void);
 +(void)showPickerWithTitle:(NSString *)title
                       rows:(NSArray <NSString *> *)rows
           initialSelection:(NSInteger)initialSelection
+               isMultiline:(BOOL)isMultiline
                 sourceView:(UIView *)sourceView
                  doneBlock:(void (^)(NSInteger selectedIndex, NSString * selectedValue))doneBlock
                cancelBlock:(void (^)(void))cancelBlock
@@ -60,6 +63,7 @@ typedef void(^cancelBlock)(void);
     SearchStringPickerViewController *searchStringPickerViewController =  [[SearchStringPickerViewController alloc] initPickerWithTitle:title
                                                                                                                                    rows:rows
                                                                                                                        initialSelection:initialSelection
+                                                                                                                            isMultiline:isMultiline
                                                                                                                              sourceView:sourceView
                                                                                                                               doneBlock:doneBlock
                                                                                                                             cancelBlock:cancelBlock];
@@ -70,6 +74,7 @@ typedef void(^cancelBlock)(void);
 +(void)showPickerWithTitle:(NSString *)title
            rowsWithDetails:(NSDictionary<NSString *, NSString *> *)rowsWithDetails
           initialSelection:(NSString *)initialSelection
+               isMultiline:(BOOL)isMultiline
   pickerTableViewCellStyle:(UITableViewCellStyle)pickerTableViewCellStyle
                 sourceView:(UIView *)sourceView
                  doneBlock:(void (^)(NSString *selectedTitle, NSString *selectedDetail))doneBlock
@@ -79,6 +84,7 @@ typedef void(^cancelBlock)(void);
     SearchStringPickerViewController *searchStringPickerViewController =  [[SearchStringPickerViewController alloc] initPickerWithTitle:title
                                                                                                                         rowsWithDetails:rowsWithDetails
                                                                                                                        initialSelection:initialSelection
+                                                                                                                            isMultiline:isMultiline
                                                                                                                pickerTableViewCellStyle:pickerTableViewCellStyle
                                                                                                                              sourceView:sourceView
                                                                                                                               doneBlock:doneBlock
@@ -92,6 +98,7 @@ typedef void(^cancelBlock)(void);
 -(instancetype)initPickerWithTitle:(NSString *)title
                               rows:(NSArray <NSString *> *)rows
                   initialSelection:(NSInteger)initialSelection
+                       isMultiline:(BOOL)isMultiline
                         sourceView:(UIView *)sourceView
                          doneBlock:(void (^)(NSInteger selectedIndex, NSString * selectedValue))doneBlock
                        cancelBlock:(void (^)(void))cancelBlock
@@ -105,6 +112,7 @@ typedef void(^cancelBlock)(void);
     return [self initPickerWithTitle:title
                      rowsWithDetails:rowsWithDetails
                     initialSelection:initialSelection == NSNotFound? @"" :[rows objectAtIndex:initialSelection]
+                         isMultiline:isMultiline
             pickerTableViewCellStyle:UITableViewCellStyleDefault
                           sourceView:sourceView
                            doneBlock:^(NSString *selectedTitle, NSString *selectedDetail) {
@@ -115,6 +123,7 @@ typedef void(^cancelBlock)(void);
 -(instancetype)initPickerWithTitle:(NSString *)title
                 rowsWithDetails:(NSDictionary<NSString *, NSString *> *)rowsWithDetails
                   initialSelection:(NSString *)initialSelection
+                       isMultiline:(BOOL)isMultiline
           pickerTableViewCellStyle:(UITableViewCellStyle)pickerTableViewCellStyle
                         sourceView:(UIView *)sourceView
                          doneBlock:(void (^)(NSString *selectedTitle, NSString *selectedDetail))doneBlock
@@ -124,7 +133,7 @@ typedef void(^cancelBlock)(void);
     self.modalPresentationStyle = UIModalPresentationFormSheet;
     self.popoverPresentationController.sourceView = sourceView;
 
-
+    self.isMultiline = isMultiline;
     self.pickerTitle = title;
     self.dicRows = rowsWithDetails;
     self.aryTitleRows = [[rowsWithDetails allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
@@ -161,9 +170,14 @@ typedef void(^cancelBlock)(void);
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     cell.textLabel.text = self.isSearching ? [self.arySearchResultTitleRows objectAtIndex:indexPath.row] : [self.aryTitleRows objectAtIndex:indexPath.row];
+    cell.textLabel.numberOfLines = self.isMultiline ? 0 : 1;
     cell.detailTextLabel.text = [self.dicRows objectForKey:cell.textLabel.text];
     cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
     cell.accessoryType = [cell.textLabel.text isEqualToIgnoreCaseString:self.selectedTitle] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  return UITableViewAutomaticDimension;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
